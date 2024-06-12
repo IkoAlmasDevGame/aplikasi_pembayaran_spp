@@ -3,7 +3,7 @@
 date_default_timezone_set("Asia/Jakarta");
 
 $dbname = "pembayaran_spp";
-$config = mysqli_connect("localhost", "root", "", "cp_pembayaran_spp");
+$config = mysqli_connect("localhost", "root", "", $dbname);
 
 if($config->error){
     mysqli_error($config);
